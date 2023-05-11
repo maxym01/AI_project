@@ -24,7 +24,7 @@ def inspect_data(dataset):
     print('Statistics:')
     print(dataset.describe().transpose())
 
-    sns.pairplot(dataset[['citympg', 'cylindernumber', 'price', 'curbweight']], diag_kind='kde')
+    sns.pairplot(dataset[['enginesize', 'wheelbase', 'price', 'curbweight']], diag_kind='kde')
     plt.show()
 
 
