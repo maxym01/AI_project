@@ -96,7 +96,7 @@ theta_beg = theta_beg.T
 
 time_1 = time.time()
 m = len(X_std)
-for i in range(1, 10000):
+for i in range(1, 2500):
     new_theta = theta_beg - η*((2/m)*X_std.T*(X_std*theta_beg-Y_std))
     theta_beg = new_theta
 
